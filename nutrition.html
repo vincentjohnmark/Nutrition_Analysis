@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nutrition.html">Nutrition Analysis</a></li>
+        <li><a href="products.html">Products</a></li>
+    </ul>
+</nav>
+    <header>
+        <h1>Nutrition Content Analyzer</h1>
+    </header>
+
+    <main>
+        <section id="analyze-section">
+            
+            <form id="nutrition-form">
+                <h1>Analyze Your Food</h1>
+                            <div class="form-group">
+                                <label for="food-item">Food Item:</label>
+                                <input type="text" id="food-item" name="food-item" placeholder="Enter a food item" required>
+                            </div>
+                            <button type="submit">Analyze</button>
+                                    <!-- Input for vitamin deficiency -->
+        <input type="text" id="vitamin-input" placeholder="Enter vitamin deficiency (A, B, C, D, E, K)">
+        <button id="suggest-btn">Suggest Foods</button>
+
+        <h2>Vitamin Deficiency Calculator</h2>
+        <label for="symptom-input">Select a symptom:</label>
+        <select id="symptom-input">
+            <option value="">--Select a symptom--</option>
+            <option value="tiredness">Tiredness</option>
+            <option value="poor vision">Poor Vision</option>
+            <option value="weak immune system">Weak Immune System</option>
+            <option value="muscle weakness">Muscle Weakness</option>
+            <option value="bone pain">Bone Pain</option>
+            <option value="slow healing">Slow Healing Wounds</option>
+            <option value="hair loss">Hair Loss</option>
+            <option value="dry skin">Dry Skin</option>
+            <option value="numbness or tingling">Numbness/Tingling</option>
+            <option value="bleeding gums">Bleeding Gums</option>
+            <option value="frequent infections">Frequent infections</option>
+            <option value="depression">Depression</option>
+            <option value="memory problems">Memory Problem</option>
+            <option value="irritability">Irritability</option>
+            <option value="anemia">Anemia</option>
+            <option value="brittle nails">Brittle Nails</option>
+            <option value="night blindness">Night Blindness</option>
+            <option value="osteoporosis">Osteoporosis</option>
+            <option value="fatigue">Fatigue</option>
+            <option value="cramps">Cramps</option>
+
+
+            
+        </select>
+        <button id="deficiency-btn">Check Deficiency</button>
+
+                    <!-- Section for Daily Nutritional Goals Tracker -->
+                    <h2>Daily Nutritional Goals Tracker</h2>
+                    <main>
+                             <!-- Set Daily Goals -->
+                              <div id="goals-section">
+                                 <h3>Set Your Daily Goals:</h3>
+                                 <label for="goal-calories">Calories:</label>
+                                 <input type="number" id="goal-calories" placeholder="e.g., 2000">
+                                 <label for="goal-protein">Protein (g):</label>
+                                 <input type="number" id="goal-protein" placeholder="e.g., 50">
+                                 <label for="goal-carbs">Carbs (g):</label>
+                                 <input type="number" id="goal-carbs" placeholder="e.g., 300">
+                                 <label for="goal-fat">Fats (g):</label>
+                                 <input type="number" id="goal-fat" placeholder="e.g., 70">
+                                 <button id="set-goals-btn">Set Goals</button>
+                             </div>
+                    <!-- Your existing tracker HTML structure -->
+                    <div id="tracking-section">
+                        <h3>Enter Food You Ate Today:</h3>
+                        <input type="text" id="food-entry" placeholder="Enter food item">
+                        <button id="add-food-btn">Add Food</button>
+                
+                        <!-- Reset Button -->
+                        <button id="reset-tracker-btn">Reset Tracker</button>
+                
+                        <!-- Daily Totals -->
+                        <div id="daily-summary">
+                            <h3>Today's Intake:</h3>
+                            <p id="calories-intake">Calories: 0 kcal</p>
+                            <p id="protein-intake">Protein: 0 g</p>
+                            <p id="carbs-intake">Carbs: 0 g</p>
+                            <p id="fats-intake">Fats: 0 g</p>
+                        </div>
+                    </div>
+
+            </form>
+
+            <div id="result"></div> <!-- The div where results will be displayed -->
+            <div id="suggestion"></div> <!-- Placeholder for vitamin deficiency suggestions -->
+            <div id="deficiency-result"></div> <!-- Add this div -->
+        </section>
+    </main>
+
+    <script src="app.js"></script> <!-- Link to your JavaScript file -->
+    <footer>
+        <p>&copy; 2024 Food Nutrition Analysis. All rights reserved.</p>
+    </footer>
+</body>
+</html>
